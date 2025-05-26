@@ -297,8 +297,21 @@ img {
   fill: var(--first-color);
 }
 
-.home__blob-img {
-  width: 170px;
+.home__img {
+  width: 200px;
+  height: 200px; /* Add height to make it a perfect circle */
+  border-radius: 50%;
+  overflow: hidden; /* This crops the image to the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image fills the circle nicely */
+  object-position: center;
 }
 
 .home__data {
